@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumChoresPublicKO", "ScrumChoresPublicKO\ScrumChoresPublicKO.csproj", "{763F265E-3CB3-4644-B812-DC8142A8407D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumChoresPublicKO.Tests", "c:\users\ben\documents\visual studio 2013\Projects\ScrumChoresPublicKO\ScrumChoresPublicKO.Tests\ScrumChoresPublicKO.Tests.csproj", "{6962E1A7-2AF1-4814-AE59-A78960A9B596}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{01860FD7-F1C3-425D-A7FA-BDBFC7BAB30F}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{A7483A2F-642C-4106-9449-7B9935C4C3EB}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\ScrumChoresPublicKO-WAWS-dev.json = PublishScripts\Configurations\ScrumChoresPublicKO-WAWS-dev.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumChores.Business", "ScrumChores.Business\ScrumChores.Business.csproj", "{17D18EC5-E3C9-4B57-A3D1-B15B9E265C6D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumChores.Model", "ScrumChores.Model\ScrumChores.Model.csproj", "{4F61ECF4-9E9E-4D15-8329-97287C74B72C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{763F265E-3CB3-4644-B812-DC8142A8407D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763F265E-3CB3-4644-B812-DC8142A8407D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763F265E-3CB3-4644-B812-DC8142A8407D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763F265E-3CB3-4644-B812-DC8142A8407D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6962E1A7-2AF1-4814-AE59-A78960A9B596}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6962E1A7-2AF1-4814-AE59-A78960A9B596}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6962E1A7-2AF1-4814-AE59-A78960A9B596}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6962E1A7-2AF1-4814-AE59-A78960A9B596}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17D18EC5-E3C9-4B57-A3D1-B15B9E265C6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17D18EC5-E3C9-4B57-A3D1-B15B9E265C6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17D18EC5-E3C9-4B57-A3D1-B15B9E265C6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17D18EC5-E3C9-4B57-A3D1-B15B9E265C6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F61ECF4-9E9E-4D15-8329-97287C74B72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F61ECF4-9E9E-4D15-8329-97287C74B72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F61ECF4-9E9E-4D15-8329-97287C74B72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F61ECF4-9E9E-4D15-8329-97287C74B72C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A7483A2F-642C-4106-9449-7B9935C4C3EB} = {01860FD7-F1C3-425D-A7FA-BDBFC7BAB30F}
+	EndGlobalSection
+EndGlobal
