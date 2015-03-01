@@ -9,6 +9,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using ScrumChoresPublicKO.Models;
+using ScrumChores.Business.Repositories;
+using ScrumChores.Model.Entities;
 
 namespace ScrumChoresPublicKO.Controllers
 {
@@ -73,9 +75,14 @@ namespace ScrumChoresPublicKO.Controllers
                 return View(model);
             }
 
+            var user = UserManager.FindByEmail(model.EmailUserName);
+
+            if (user != null)
+                model.EmailUserName = user.UserName;
+
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
-            var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
+            var result = await SignInManager.PasswordSignInAsync(model.EmailUserName, model.Password, model.RememberMe, shouldLockout: false);
             switch (result)
             {
                 case SignInStatus.Success:
@@ -151,17 +158,31 @@ namespace ScrumChoresPublicKO.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser()
+                {
+                    UserName = model.UserName,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Email = model.Email
+                };
+                
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
+                    //Create a ScrumChore User
+                    var userRepo = new UserRepository();
+                    var createResult = await userRepo.CreateUser(new User() { FirstName = user.FirstName, LastName = user.LastName });
+
+                    if (createResult.UserID != Guid.Empty)
+                        user.UserID = createResult.UserID;
+
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                     
                     // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=320771
                     // Send an email with this link
-                    // string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
-                    // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
-                    // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
+                    //string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
+                    //var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
+                    //await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
                     return RedirectToAction("Index", "Home");
                 }
@@ -343,7 +364,7 @@ namespace ScrumChoresPublicKO.Controllers
                     // If the user does not have an account, then prompt the user to create an account
                     ViewBag.ReturnUrl = returnUrl;
                     ViewBag.LoginProvider = loginInfo.Login.LoginProvider;
-                    return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { Email = loginInfo.Email });
+                    return View("ExternalLoginConfirmation", new ExternalLoginConfirmationViewModel { UserName = loginInfo.DefaultUserName });
             }
         }
 
@@ -367,7 +388,13 @@ namespace ScrumChoresPublicKO.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser()
+                {
+                    UserName = model.UserName,
+                    FirstName = string.Format("{0} User :", AuthenticationManager.User.Identity.AuthenticationType[0].ToString()),
+                    LastName = model.UserName,
+                    Email = model.Email
+                };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {

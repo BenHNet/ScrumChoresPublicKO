@@ -162,6 +162,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\SprintController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
@@ -247,6 +248,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ScrumChores.Business\ScrumChores.Business.csproj">
+      <Project>{17d18ec5-e3c9-4b57-a3d1-b15b9e265c6d}</Project>
+      <Name>ScrumChores.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScrumChores.Model\ScrumChores.Model.csproj">
+      <Project>{4f61ecf4-9e9e-4d15-8329-97287c74b72c}</Project>
+      <Name>ScrumChores.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
