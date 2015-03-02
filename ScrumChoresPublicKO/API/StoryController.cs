@@ -16,50 +16,47 @@ using Microsoft.Owin.Security;
 
 namespace ScrumChoresPublicKO.API
 {
-    public class SprintController : ApiController
+    public class StoryController : ApiController
     {
-
-        private ISprintRepository _sprintRepo;
+        private IStoryRepository _StoryRepo;
         private IUserRepository _userRepo;
         private UserManager<ApplicationUser> _userManager;
 
-        public SprintController()
-            : this(new SprintRepository(), new UserRepository(), new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
+        public StoryController()
+            : this(new StoryRepository(), new UserRepository(), new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext())))
         {
         }
 
-        public SprintController(ISprintRepository repoSprint, IUserRepository repoUser, UserManager<ApplicationUser> userManager)
+        public StoryController(IStoryRepository repoStory, IUserRepository repoUser, UserManager<ApplicationUser> userManager)
         {
-            _sprintRepo = repoSprint;
+            _StoryRepo = repoStory;
             _userRepo = repoUser;
             _userManager = userManager;
         }
 
         // GET api/<controller>
-        public IEnumerable<Sprint> Get()
+        public IEnumerable<Story> Get()
         {
             var user = _userRepo.GetUser(_userManager.FindById(this.User.Identity.GetUserId()).UserID);
 
-            var result = _sprintRepo.GetSprintsForUser(user.Result).ToList();
-            result.Insert(0, new Sprint() { SprintName = "Backlog" });
+            var result = _StoryRepo.GetStoriesForUser(user.Result);
 
-            return result.AsQueryable();
+            return result;
         }
 
         // GET api/<controller>/5
-        public Sprint Get(int id)
+        public Story Get(int id)
         {
-            return new Sprint();
+            return new Story();
         }
 
         // POST api/<controller>
-        public void Post([FromBody]Sprint value)
+        public void Post([FromBody]Story value)
         {
-            _sprintRepo.CreateSprint(value);
         }
 
         // PUT api/<controller>/5
-        public void Put(int id, [FromBody]Sprint value)
+        public void Put(int id, [FromBody]Story value)
         {
         }
 

@@ -163,6 +163,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="API\SprintController.cs" />
+    <Compile Include="API\StoryController.cs" />
+    <Compile Include="API\TaskController.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
