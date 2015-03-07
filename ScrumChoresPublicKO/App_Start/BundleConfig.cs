@@ -14,6 +14,17 @@ namespace ScrumChoresPublicKO
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
+            bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
+                        "~/Scripts/knockout-3.3.0.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/scrumchorescommon").Include(
+                        "~/Scripts/ScrumChores/Common/NameSpace.js",
+                        "~/Scripts/ScrumChores/Common/DateHelper.js",
+                        "~/Scripts/ScrumChores/Common/Models/Sprint.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/chorelist").Include(
+                        "~/Scripts/ScrumChores/ViewModels/ChoreListVM.js"));
+
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(

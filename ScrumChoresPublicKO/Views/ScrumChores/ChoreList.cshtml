@@ -1,8 +1,35 @@
 ﻿
 @{
-    ViewBag.Title = "ChoreList";
+    ViewBag.Title = "Chore List";
     Layout = "~/Views/Shared/_SchrumChoresLayout.cshtml";
 }
 
-<h2>ChoreList</h2>
+<div id="sprintPanel" class="col-md-3">
+
+    <h1>Sprints</h1>
+
+    @*<a href="#/chorelist" data-bind="click: createSprint">New</a>
+    <a href="#/chorelist" data-bind="click: editSprint">Change</a>
+    <a href="#/chorelist" data-bind="click: deleteSprint">Remove</a>*@
+
+    <table>
+        <!-- Todo: Generate table body -->
+        <tbody data-bind="foreach: sprints">
+            <tr>
+                <td>
+                    <div class="sprintView k-widget">
+                        <h4 data-bind="text: SprintName"></h4>
+                        <h6 data-bind="text: SprintDateRange"></h6>
+                    </div>
+                </td>
+            </tr>   
+        </tbody>
+    </table>
+        
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/scrumchorescommon")
+    @Scripts.Render("~/bundles/chorelist")
+}
 
