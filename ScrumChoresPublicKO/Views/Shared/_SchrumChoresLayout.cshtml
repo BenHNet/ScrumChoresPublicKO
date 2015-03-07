@@ -37,9 +37,9 @@
                     @if (Request.IsAuthenticated)
                     {
                         <li>@Html.ActionLink("My Scrum Chores", "Home", "ScrumChores")</li>
+                        <li>@Html.ActionLink("Chore List", "ChoreList", "ScrumChores")</li>
+                        <li>@Html.ActionLink("Chore Board", "ChoreBoard", "ScrumChores")</li>
                     }
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
