@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Chore List";
     Layout = "~/Views/Shared/_SchrumChoresLayout.cshtml";
 }
@@ -8,9 +7,9 @@
 
     <h1>Sprints</h1>
 
-    @*<a href="#/chorelist" data-bind="click: createSprint">New</a>
-    <a href="#/chorelist" data-bind="click: editSprint">Change</a>
-    <a href="#/chorelist" data-bind="click: deleteSprint">Remove</a>*@
+    <a href="#/chorelist" data-bind="click: showNewSprintDialog">New</a>
+    @*<a href="#/chorelist" data-bind="click: editSprint">Change</a>
+        <a href="#/chorelist" data-bind="click: deleteSprint">Remove</a>*@
 
     <table>
         <!-- Todo: Generate table body -->
@@ -22,13 +21,41 @@
                         <h6 data-bind="text: SprintDateRange"></h6>
                     </div>
                 </td>
-            </tr>   
+            </tr>
         </tbody>
     </table>
-        
+
+</div>
+
+<div id="dialog-form" title="Create New Sprint">
+    <!-- Contact form (not working)-->
+    <form class="form-horizontal">
+        <!-- Name -->
+        <div class="form-group">
+            <label class="control-label col-md-3" for="name">Name</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="name" data-bind="value: currentSprint.SprintName">
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group">
+            <label class="control-label col-md-3" for="email">Start Date</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="email" data-bind="value: currentSprint.SprintStartDate">
+            </div>
+        </div>
+        <!-- Website -->
+        <div class="form-group">
+            <label class="control-label col-md-3" for="website">End Date</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="website" data-bind="value: currentSprint.SprintEndDate">
+            </div>
+        </div>
+      </form>
 </div>
 
 @section Scripts {
+    @Scripts.Render("~/bundles/jqueryui")
     @Scripts.Render("~/bundles/scrumchorescommon")
     @Scripts.Render("~/bundles/chorelist")
 }
