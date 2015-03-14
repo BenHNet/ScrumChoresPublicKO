@@ -10,6 +10,8 @@ namespace ScrumChoresPublicKO.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Message = "Your home page.";
+
             return View();
         }
 

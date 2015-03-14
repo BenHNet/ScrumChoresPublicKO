@@ -20,6 +20,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumChores.Business", "Scr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumChores.Model", "ScrumChores.Model\ScrumChores.Model.csproj", "{4F61ECF4-9E9E-4D15-8329-97287C74B72C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrumChores.WebAndLoadTests", "ScrumChores.WebAndLoadTests\ScrumChores.WebAndLoadTests.csproj", "{DD94D48D-3562-4A57-A4DD-2621C8DFA9AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6E0FE713-B532-44C4-886C-6E19487EA977}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +45,10 @@ Global
 		{4F61ECF4-9E9E-4D15-8329-97287C74B72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F61ECF4-9E9E-4D15-8329-97287C74B72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F61ECF4-9E9E-4D15-8329-97287C74B72C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD94D48D-3562-4A57-A4DD-2621C8DFA9AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD94D48D-3562-4A57-A4DD-2621C8DFA9AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD94D48D-3562-4A57-A4DD-2621C8DFA9AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD94D48D-3562-4A57-A4DD-2621C8DFA9AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

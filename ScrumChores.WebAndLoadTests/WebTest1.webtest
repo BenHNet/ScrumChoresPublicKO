@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="fe194953-dd77-43f2-9bb5-9f9f3b58558a" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.7cfe947f-b0e5-4eda-8936-48b5794412eb.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="8c77b342-62b7-4247-8160-f90fdd0075dc" Version="1.1" Url="http://localhost/ScrumCHoresPublicKO" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="60656eed-a7a7-4802-a639-96787b98de1f" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="7ca663f7-bad2-48fe-b452-d6e6b608bbe4" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+          </Headers>
+        </Request>
+      </DependentRequests>
+    </Request>
+    <Request Method="GET" Guid="83500462-1b11-424d-a894-90a59d89027f" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="c2bb9e48-40c4-4ee1-8f84-3a47f58ce85b" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumCHoresPublicKO" RecordedValue="http%3A%2F%2Flocalhost%2FScrumCHoresPublicKO" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1426303928299" RecordedValue="1426303928299" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="b0a92cac-8ac3-48e1-8bfa-4453c4beaae2" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="c6a4ddec-96dc-4713-b066-60d8123b727b" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.ttf" ThinkTime="14" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3331aa4b-c9e8-49b8-b1db-11396800ab82" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/Account/Login" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="87fe8410-ccf6-42c4-9f10-1a82055bc2e0" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAA4UePahY3HdwIGjvBHdolbnR7yiMcXdNj1yVtz%2F00TIgAAAAAOgAAAAAIAACAAAAD%2FUiu6r%2FLD0rDXv%2FmYB7ebigkaGiKWkubOh67QakBpEDAAAADpOAIo7hpTV4nVHlNe2CDd%2B4UslJHJhfi9CG4zH9lTUlLeh04o5m6Wob6eFf%2BGJgxAAAAA82WCHBcp5fwsJ9rauYRN2ys51uodiMA9KxJGN9tSxBTi3%2B4TuZjqyI2%2FhX9rMNq4bmiMeyRWiRaD31TTtxcxAg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAA4UePahY3HdwIGjvBHdolbnR7yiMcXdNj1yVtz%2F00TIgAAAAAOgAAAAAIAACAAAAD%2FUiu6r%2FLD0rDXv%2FmYB7ebigkaGiKWkubOh67QakBpEDAAAADpOAIo7hpTV4nVHlNe2CDd%2B4UslJHJhfi9CG4zH9lTUlLeh04o5m6Wob6eFf%2BGJgxAAAAA82WCHBcp5fwsJ9rauYRN2ys51uodiMA9KxJGN9tSxBTi3%2B4TuZjqyI2%2FhX9rMNq4bmiMeyRWiRaD31TTtxcxAg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumCHoresPublicKO" RecordedValue="http%3A%2F%2Flocalhost%2FScrumCHoresPublicKO" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="1" RecordedValue="1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ee72acc6-1939-455b-b10b-5c2408fc218b" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/__browserLink/requestData/01808032086d4ec18ddd686fa6e84a83" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="488249c2-ffb0-41a6-9255-fa2e6bb221ba" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/abort" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumCHoresPublicKO" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAA4UePahY3HdwIGjvBHdolbnR7yiMcXdNj1yVtz%2F00TIgAAAAAOgAAAAAIAACAAAAD%2FUiu6r%2FLD0rDXv%2FmYB7ebigkaGiKWkubOh67QakBpEDAAAADpOAIo7hpTV4nVHlNe2CDd%2B4UslJHJhfi9CG4zH9lTUlLeh04o5m6Wob6eFf%2BGJgxAAAAA82WCHBcp5fwsJ9rauYRN2ys51uodiMA9KxJGN9tSxBTi3%2B4TuZjqyI2%2FhX9rMNq4bmiMeyRWiRaD31TTtxcxAg%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAA4UePahY3HdwIGjvBHdolbnR7yiMcXdNj1yVtz%2F00TIgAAAAAOgAAAAAIAACAAAAD%2FUiu6r%2FLD0rDXv%2FmYB7ebigkaGiKWkubOh67QakBpEDAAAADpOAIo7hpTV4nVHlNe2CDd%2B4UslJHJhfi9CG4zH9lTUlLeh04o5m6Wob6eFf%2BGJgxAAAAA82WCHBcp5fwsJ9rauYRN2ys51uodiMA9KxJGN9tSxBTi3%2B4TuZjqyI2%2FhX9rMNq4bmiMeyRWiRaD31TTtxcxAg%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumCHoresPublicKO" RecordedValue="http%3A%2F%2Flocalhost%2FScrumCHoresPublicKO" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="4e9b656a-e6c6-4ad5-b131-4a473e7537a4" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/LKf8nhXsWg5ybwEGXk8UBQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="e7c199e6-e642-4804-af13-f61140de2f33" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="b66ef917-1467-4a82-a8c4-b64ac51299f3" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="ae0703dc-3d21-44f8-bb4b-83568f2e0d2e" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/-g5pDUSRgvxvOl5u-a_WHw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="fc9d323a-7504-40dd-b54f-6c690caa10ec" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="472769f8-07f2-4869-a49c-3cdbb8eda059" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="39080194-01f0-42a8-a19a-ad2c22fb0b68" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FAccount%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FAccount%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1426303943903" RecordedValue="1426303943903" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="a9c40ff7-440c-457d-9714-7f146fe40fda" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9dd18ca4-75dc-4662-821a-c9d5585f8834" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.ttf" ThinkTime="18" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="1feef9a4-4b95-4110-8468-651e98518915" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/Account/Login" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://localhost/ScrumChoresPublicKO/" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="xZYYQ4XmaBHu2XJlq1GylXE0COkddrk8kBfwGtoyOseHR3laGRAzvryh7-GO-E0yvTTjZirk72Wd1E0X5DHt3-vkHIrKoxk06ix8DebsqDo1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="EmailUserName" Value="ben@htechinc.com" RecordedValue="ben@htechinc.com" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Password" Value="Harruq1Qurrah1" RecordedValue="Harruq1Qurrah1" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="RememberMe" Value="{{$HIDDEN1.RememberMe}}" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="5e87a7ba-d4a2-4462-983f-602e5c052981" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAABOmynw7fWizCjdYvMFp7ranyHeB1Ybi0gm4VX0UcbiZAAAAAAOgAAAAAIAACAAAAAGFGmFJiINw%2FAn67hN4Hwt4vTTceVSbuXjo5ZjgkeyBjAAAACI8lvDUiZJKpNDEQB0gKPAMx97QCQvh%2F%2BFBNqCqVX259Rnjx62sUcFQKUOTI4sFmhAAAAAqyEwR9AxqVQiQiJs4fwPs0LuntgdyxYieJtxVCPdRrav8PbCTqzG15H0CqeUcWs5VGUY3YEilzygMQGwu5leOA%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAABOmynw7fWizCjdYvMFp7ranyHeB1Ybi0gm4VX0UcbiZAAAAAAOgAAAAAIAACAAAAAGFGmFJiINw%2FAn67hN4Hwt4vTTceVSbuXjo5ZjgkeyBjAAAACI8lvDUiZJKpNDEQB0gKPAMx97QCQvh%2F%2BFBNqCqVX259Rnjx62sUcFQKUOTI4sFmhAAAAAqyEwR9AxqVQiQiJs4fwPs0LuntgdyxYieJtxVCPdRrav8PbCTqzG15H0CqeUcWs5VGUY3YEilzygMQGwu5leOA%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FAccount%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FAccount%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4546f0f9-5611-46ce-84cc-c0ae0e6f8f98" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/__browserLink/requestData/710dfa4936d247a2bd0efddbf119da64" ThinkTime="17" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="bc78c4e2-cdee-488f-bdfa-1a904dea0300" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/abort" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/Account/Login" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAABOmynw7fWizCjdYvMFp7ranyHeB1Ybi0gm4VX0UcbiZAAAAAAOgAAAAAIAACAAAAAGFGmFJiINw%2FAn67hN4Hwt4vTTceVSbuXjo5ZjgkeyBjAAAACI8lvDUiZJKpNDEQB0gKPAMx97QCQvh%2F%2BFBNqCqVX259Rnjx62sUcFQKUOTI4sFmhAAAAAqyEwR9AxqVQiQiJs4fwPs0LuntgdyxYieJtxVCPdRrav8PbCTqzG15H0CqeUcWs5VGUY3YEilzygMQGwu5leOA%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAABOmynw7fWizCjdYvMFp7ranyHeB1Ybi0gm4VX0UcbiZAAAAAAOgAAAAAIAACAAAAAGFGmFJiINw%2FAn67hN4Hwt4vTTceVSbuXjo5ZjgkeyBjAAAACI8lvDUiZJKpNDEQB0gKPAMx97QCQvh%2F%2BFBNqCqVX259Rnjx62sUcFQKUOTI4sFmhAAAAAqyEwR9AxqVQiQiJs4fwPs0LuntgdyxYieJtxVCPdRrav8PbCTqzG15H0CqeUcWs5VGUY3YEilzygMQGwu5leOA%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FAccount%2FLogin" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FAccount%2FLogin" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="1302dbe4-1625-4aa1-8689-ff1407feb055" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/LKf8nhXsWg5ybwEGXk8UBQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="31dbdb73-d45c-481b-985c-369ffcdda8ab" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="b5b0f13c-a0a9-43af-9c65-491e03b6d86d" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="02977f0f-c6f1-4e59-9b96-8e364bb9f742" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/-g5pDUSRgvxvOl5u-a_WHw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="7c5efc77-ed23-48f3-80dd-8ce192c6356d" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="927ce44f-425e-486e-bfc9-017549ea907a" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="7d9d9f78-f8bf-4bf2-b434-6fadb1765093" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1426303963271" RecordedValue="1426303963271" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="4a7e4a87-17fd-4214-baf5-25df64cde809" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4d9448d1-9b2b-4ff0-a788-5baea101e564" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.ttf" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="e7402b4a-7a39-41f0-b4ab-699280c92d01" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="a941f627-fb8d-4aa5-8a79-9934eb8bac26" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/LKf8nhXsWg5ybwEGXk8UBQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="0404e029-3de5-41bc-8162-28e1b88b67ad" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="f0fbd79d-43f9-49f7-86f4-29768be2f317" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="ab029b41-36f9-4e90-9935-92e0fdb16323" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/-g5pDUSRgvxvOl5u-a_WHw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="10a017de-0777-4f75-98c0-a5756d34b799" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+          </Headers>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="2fddfd3c-1a0f-4659-889e-3e2eb5fc1e6a" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACwjMX%2F3Ve8GvbZw9iRhO10ZQyoZugZjzU%2F9mKkLcBD6QAAAAAOgAAAAAIAACAAAABDRf0RSVc0vNqpTaoplcru5zGgPJl67J47uU7EJoI%2FjzAAAABld3O0VRL3%2B8XVLhJfgw36WojjQezpvT5wNXmxDv%2BehpwURL9XskNVdmF9oCS7E%2FFAAAAA5xQ%2B1MvV3lelr9lQr2yHyRkIW5w%2BGknbp%2BoHf4hQt3YhmT5m462fB4jqSiJ36M7S87Vj5nDmIvpKfq%2BGE6BoZA%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACwjMX%2F3Ve8GvbZw9iRhO10ZQyoZugZjzU%2F9mKkLcBD6QAAAAAOgAAAAAIAACAAAABDRf0RSVc0vNqpTaoplcru5zGgPJl67J47uU7EJoI%2FjzAAAABld3O0VRL3%2B8XVLhJfgw36WojjQezpvT5wNXmxDv%2BehpwURL9XskNVdmF9oCS7E%2FFAAAAA5xQ%2B1MvV3lelr9lQr2yHyRkIW5w%2BGknbp%2BoHf4hQt3YhmT5m462fB4jqSiJ36M7S87Vj5nDmIvpKfq%2BGE6BoZA%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="7" RecordedValue="7" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0808e6ec-701d-4d93-b477-f61d67b7104a" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/__browserLink/requestData/9e4d714f553048d2ad4c9c218596c8c4" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="dab40c7d-9ab0-442e-94b7-d0b6b3246178" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/abort" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACwjMX%2F3Ve8GvbZw9iRhO10ZQyoZugZjzU%2F9mKkLcBD6QAAAAAOgAAAAAIAACAAAABDRf0RSVc0vNqpTaoplcru5zGgPJl67J47uU7EJoI%2FjzAAAABld3O0VRL3%2B8XVLhJfgw36WojjQezpvT5wNXmxDv%2BehpwURL9XskNVdmF9oCS7E%2FFAAAAA5xQ%2B1MvV3lelr9lQr2yHyRkIW5w%2BGknbp%2BoHf4hQt3YhmT5m462fB4jqSiJ36M7S87Vj5nDmIvpKfq%2BGE6BoZA%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACwjMX%2F3Ve8GvbZw9iRhO10ZQyoZugZjzU%2F9mKkLcBD6QAAAAAOgAAAAAIAACAAAABDRf0RSVc0vNqpTaoplcru5zGgPJl67J47uU7EJoI%2FjzAAAABld3O0VRL3%2B8XVLhJfgw36WojjQezpvT5wNXmxDv%2BehpwURL9XskNVdmF9oCS7E%2FFAAAAA5xQ%2B1MvV3lelr9lQr2yHyRkIW5w%2BGknbp%2BoHf4hQt3YhmT5m462fB4jqSiJ36M7S87Vj5nDmIvpKfq%2BGE6BoZA%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="16c07549-88f4-4821-9c79-74d2d80f98a6" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="8852ec6a-7979-43b1-a44a-6a83744e29d1" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FHome" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FHome" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1426303970189" RecordedValue="1426303970189" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="079875de-cfb0-440e-a128-d9674f7eaa89" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="f2d52dcc-3956-4cdc-a15d-24b84633a8c0" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.ttf" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="6f9c4fe3-c17d-4af9-b6f9-37fc6dbcee2c" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="2b58d3de-7892-4847-be4f-20391b355d1b" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAAzEqDnhdhNkYP7Xa75QWYMExuHlqaIKK4keePIMI41gwAAAAAOgAAAAAIAACAAAACBosgaS00UC6gk%2BxBXTck3KOaU%2BYSX6a0K07nIXajH%2BjAAAAAoCz3j3rxVjpgJKL6XDADkncG5luM4H1AHawRfob4tigrtv1L8HDLoy2KpbCi7lVRAAAAAgfZZnKUVciCHiI%2FwCiuDTGuqofSZRDjg7meTWDyvkPoocS99DaIACEcUrE2XAY19AyzkHNaTi8Hd4fTA0bJhdw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAAzEqDnhdhNkYP7Xa75QWYMExuHlqaIKK4keePIMI41gwAAAAAOgAAAAAIAACAAAACBosgaS00UC6gk%2BxBXTck3KOaU%2BYSX6a0K07nIXajH%2BjAAAAAoCz3j3rxVjpgJKL6XDADkncG5luM4H1AHawRfob4tigrtv1L8HDLoy2KpbCi7lVRAAAAAgfZZnKUVciCHiI%2FwCiuDTGuqofSZRDjg7meTWDyvkPoocS99DaIACEcUrE2XAY19AyzkHNaTi8Hd4fTA0bJhdw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FHome" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FHome" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="dfd9d851-d4d6-49cf-b726-70f9bd99c22d" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/__browserLink/requestData/73a72f95ab3e4efcb9688229c14545cf" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="a4b3d344-7d3e-4d98-99f1-3779feb0cde3" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/abort" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/Home" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAAzEqDnhdhNkYP7Xa75QWYMExuHlqaIKK4keePIMI41gwAAAAAOgAAAAAIAACAAAACBosgaS00UC6gk%2BxBXTck3KOaU%2BYSX6a0K07nIXajH%2BjAAAAAoCz3j3rxVjpgJKL6XDADkncG5luM4H1AHawRfob4tigrtv1L8HDLoy2KpbCi7lVRAAAAAgfZZnKUVciCHiI%2FwCiuDTGuqofSZRDjg7meTWDyvkPoocS99DaIACEcUrE2XAY19AyzkHNaTi8Hd4fTA0bJhdw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAAAzEqDnhdhNkYP7Xa75QWYMExuHlqaIKK4keePIMI41gwAAAAAOgAAAAAIAACAAAACBosgaS00UC6gk%2BxBXTck3KOaU%2BYSX6a0K07nIXajH%2BjAAAAAoCz3j3rxVjpgJKL6XDADkncG5luM4H1AHawRfob4tigrtv1L8HDLoy2KpbCi7lVRAAAAAgfZZnKUVciCHiI%2FwCiuDTGuqofSZRDjg7meTWDyvkPoocS99DaIACEcUrE2XAY19AyzkHNaTi8Hd4fTA0bJhdw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FHome" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FHome" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="68277210-1bc1-410b-a98c-9097ef40ff3a" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/LKf8nhXsWg5ybwEGXk8UBQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="94854e77-7710-47a5-b9b8-42586994aa3e" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="15a9161d-db54-4e6f-b987-2a47988e474a" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="0a8ca565-0e87-43ec-bdd8-0131ac3ec10c" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/-g5pDUSRgvxvOl5u-a_WHw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="139b595d-6b65-462d-8616-5a0b614869c2" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="85ab79e8-02fa-444f-bc82-6ff0357fe8e7" Version="1.1" Url="http://localhost/API/Sprint" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="30a9a6be-b8e7-45a7-8185-ca1d3fb7546b" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="b64c9225-0980-4b65-8c4c-b118aa1d5bf2" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FChoreList" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FChoreList" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1426303973966" RecordedValue="1426303973966" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="8a587494-55e8-44f5-abc6-e4f4b26b9ebc" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="dd2cf859-9f48-47f2-b6dc-2256cf1c9b2f" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.ttf" ThinkTime="10" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="6bb2f4b2-3b22-4bd8-89e4-972bcb522769" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/Account/LogOff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="http://localhost/ScrumChoresPublicKO/" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__RequestVerificationToken" Value="{{$HIDDEN1.__RequestVerificationToken}}" RecordedValue="nv8SSJfTL5cxd12x_aQQw9NbUHi-1Wf8Hgz5aue55tJLx48SsSQh8SpNTj4EpQLhZO-eC-oLmPjvi2NjT6G4UXE0_NtibLN954J0OrHsCMkKwK7MWJKN1Nubl0x-Vtfb_S7jkjwpIjHBMZgyCEqd7w2" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="ee34a69d-a334-4261-9360-eaf1ce2df8d1" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/connect" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACd5DJkawK3ZKUjlvZR%2FkmHkSdoQaiP5w1fJoReBXE1SgAAAAAOgAAAAAIAACAAAAC4xbH2DmemALgR9Iy3BETKINXREVgRYZ8SMG8KBdGBRTAAAADZYX5cE9VsOhDb1r1ty6jOiX6f7C2eqcNZNQm7WnRXvLP%2FlMDiP5whTFVo7mrAKZ9AAAAAVrZWnS%2B13iBBcUkE0ZAEF4YNPsNs8VTo4W14R5o0CwD6Esck8dw9psRImeSdUVcmzlqAXd0QCfrlXKXocgw4sw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACd5DJkawK3ZKUjlvZR%2FkmHkSdoQaiP5w1fJoReBXE1SgAAAAAOgAAAAAIAACAAAAC4xbH2DmemALgR9Iy3BETKINXREVgRYZ8SMG8KBdGBRTAAAADZYX5cE9VsOhDb1r1ty6jOiX6f7C2eqcNZNQm7WnRXvLP%2FlMDiP5whTFVo7mrAKZ9AAAAAVrZWnS%2B13iBBcUkE0ZAEF4YNPsNs8VTo4W14R5o0CwD6Esck8dw9psRImeSdUVcmzlqAXd0QCfrlXKXocgw4sw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FChoreList" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FChoreList" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="tid" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9a4346c1-3557-4670-a582-ee5e2d91b98b" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/__browserLink/requestData/965f20ea06274f18a4510a649a6ff23c" ThinkTime="9" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="460c6b1e-5162-492f-88a8-a3ea99006b6d" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/abort" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/ScrumChores/ChoreList" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="transport" Value="webSockets" RecordedValue="webSockets" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="connectionToken" Value="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACd5DJkawK3ZKUjlvZR%2FkmHkSdoQaiP5w1fJoReBXE1SgAAAAAOgAAAAAIAACAAAAC4xbH2DmemALgR9Iy3BETKINXREVgRYZ8SMG8KBdGBRTAAAADZYX5cE9VsOhDb1r1ty6jOiX6f7C2eqcNZNQm7WnRXvLP%2FlMDiP5whTFVo7mrAKZ9AAAAAVrZWnS%2B13iBBcUkE0ZAEF4YNPsNs8VTo4W14R5o0CwD6Esck8dw9psRImeSdUVcmzlqAXd0QCfrlXKXocgw4sw%3D%3D" RecordedValue="AQAAANCMnd8BFdERjHoAwE%2FCl%2BsBAAAAd2NW8YlrqUegjuUVEXvR5wAAAAACAAAAAAAQZgAAAAEAACAAAACd5DJkawK3ZKUjlvZR%2FkmHkSdoQaiP5w1fJoReBXE1SgAAAAAOgAAAAAIAACAAAAC4xbH2DmemALgR9Iy3BETKINXREVgRYZ8SMG8KBdGBRTAAAADZYX5cE9VsOhDb1r1ty6jOiX6f7C2eqcNZNQm7WnRXvLP%2FlMDiP5whTFVo7mrAKZ9AAAAAVrZWnS%2B13iBBcUkE0ZAEF4YNPsNs8VTo4W14R5o0CwD6Esck8dw9psRImeSdUVcmzlqAXd0QCfrlXKXocgw4sw%3D%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FChoreList" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2FScrumChores%2FChoreList" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="4be6cff4-55d3-4fa4-91fc-9748358f6724" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/LKf8nhXsWg5ybwEGXk8UBQ.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="e8194663-331b-47a6-8cec-bfbf17cf0a30" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="9c31f61d-a794-47a9-be47-8beaad6245b6" Version="1.1" Url="http://fonts.gstatic.com/s/ptsans/v8/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="ad6f7f03-3bb2-407a-9116-5135d8cc6f3f" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/-g5pDUSRgvxvOl5u-a_WHw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="2664a4f3-e2aa-4e4b-99ba-e0a86253ea64" Version="1.1" Url="http://fonts.gstatic.com/s/oswald/v10/bH7276GfdCjMjApa_dkG6T8E0i7KZn-EPnyo3HZu7kw.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="fa882c44-8662-43be-a2f0-523b76872a6b" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="00541d43-443c-42b1-9cdc-9a0d82e0b7ae" Version="1.1" Url="http://localhost:6963/3ad9e6bad0114eeeafe24c5ba9be867f/arterySignalR/negotiate" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Content-Type" Value="application/x-www-form-urlencoded; charset=UTF-8" />
+        <Header Name="Accept" Value="text/plain, */*; q=0.01" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="requestUrl" Value="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" RecordedValue="http%3A%2F%2Flocalhost%2FScrumChoresPublicKO%2F" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="browserName" Value="Internet+Explorer" RecordedValue="Internet+Explorer" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userAgent" Value="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" RecordedValue="Mozilla%2F5.0+(Windows+NT+6.3%3B+WOW64%3B+Trident%2F7.0%3B+.NET4.0E%3B+.NET4.0C%3B+.NET+CLR+3.5.30729%3B+.NET+CLR+2.0.50727%3B+.NET+CLR+3.0.30729%3B+InfoPath.3%3B+rv%3A11.0)+like+Gecko" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="clientProtocol" Value="1.3" RecordedValue="1.3" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="_" Value="1426303985178" RecordedValue="1426303985178" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+      <FormPostHttpBody />
+    </Request>
+    <Request Method="GET" Guid="c4157cda-15b2-41c8-bcba-0a623f59df2c" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.woff" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="29d9fe36-6345-4687-b533-712f4f63340d" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/font/fontawesome-webfont.ttf" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="v" Value="3.2.1" RecordedValue="3.2.1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="666d81b2-7d63-4458-bc73-fccfe3eb2304" Version="1.1" Url="http://localhost/ScrumChoresPublicKO/__browserLink/requestData/a2dc78d7f54a4c5881699e736f7e36f1" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/javascript, */*; q=0.01" />
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="Referer" Value="http://localhost/ScrumChoresPublicKO/" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="version" Value="2" RecordedValue="2" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
