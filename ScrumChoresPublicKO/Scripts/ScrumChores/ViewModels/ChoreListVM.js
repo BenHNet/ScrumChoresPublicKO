@@ -1,23 +1,56 @@
 ﻿scrumChores.choreListVM = {
-    // Editable data    
+    // Sprint data    
     sprints: ko.observableArray([]),
-    currentSprint: new scrumChores.models.sprint("", "", ""),
+    currentSprint: ko.observable(new scrumChores.models.sprint("", "", "", "")),
     dialogNewSprint: {},
 
-    // Get data
-    getData: function () {  
+    // Get sprint data
+    getSprintData: function () {  
         while (scrumChores.choreListVM.sprints().length > 0) {
             scrumChores.choreListVM.sprints.pop();
         }
 
         $.getJSON("/API/Sprint", function (allData) {
-            $.map(allData, function (item) { scrumChores.choreListVM.sprints.push(new scrumChores.models.sprint(item.SprintName, item.SprintStartDate, item.SprintEndDate)) });
+            $.map(allData, function (item) { scrumChores.choreListVM.sprints.push(new scrumChores.models.sprint(item.SprintID, item.SprintName, item.SprintStartDate, item.SprintEndDate)) });
+
+            if (scrumChores.choreListVM.sprints().length > 0 && scrumChores.choreListVM.currentSprint().SprintName() == "") {
+                scrumChores.choreListVM.currentSprint(scrumChores.choreListVM.sprints()[0]);
+                scrumChores.choreListVM.getStoryData(scrumChores.choreListVM.currentSprint().SprintID());
+            }
+            else if (scrumChores.choreListVM.currentSprint().SprintName() != "") {
+                scrumChores.choreListVM.getStoryData(scrumChores.choreListVM.currentSprint().SprintID());
+            }
+            else {
+                while (scrumChores.choreListVM.stories().length > 0) {
+                    scrumChores.choreListVM.stories.pop();
+                }
+            }
         });
+        
+    },
+
+    sprintSelected: function (data) {
+        scrumChores.choreListVM.currentSprint(data);
+        scrumChores.choreListVM.getStoryData(scrumChores.choreListVM.currentSprint().SprintID());
     },
 
     showNewSprintDialog: function () {
-        scrumChores.choreListVM.currentSprint = new scrumChores.models.sprint("", "", "");
+        scrumChores.choreListVM.currentSprint(new scrumChores.models.sprint("", "", "", ""));
         scrumChores.choreListVM.dialogNewSprint.dialog("open");
+    },
+
+    showEditSprintDialog: function () {
+        scrumChores.choreListVM.dialogNewSprint.dialog("open");
+    },
+
+    deleteSprint: function () {
+        $.ajax("/API/Sprint", {
+            data: ko.toJSON(scrumChores.choreListVM.currentSprint.SprintID),
+            type: "delete", contentType: "application/json",
+            success: function (result) {
+                scrumChores.choreListVM.getSprintData();
+            }
+        });
     },
 
     createSprint: function() {
@@ -25,27 +58,74 @@
             data: ko.toJSON(scrumChores.choreListVM.currentSprint),
             type: "post", contentType: "application/json",
             success: function (result) {
-                scrumChores.choreListVM.getData();
+                scrumChores.choreListVM.getSprintData();
                 scrumChores.choreListVM.dialogNewSprint.dialog("close");
+            }
+        });
+    },
+    
+    // Story data    
+    stories: ko.observableArray([]),
+    currentStory: ko.observable(new scrumChores.models.story("", "", "", "")),
+    dialogNewStory: {},
+
+    // Get story data
+    getStoryData: function (SprintID) {
+        while (scrumChores.choreListVM.stories().length > 0) {
+            scrumChores.choreListVM.stories.pop();
+        }
+
+        $.getJSON("/API/Story", function (allData) {
+            $.map(allData, function (item) { scrumChores.choreListVM.stories.push(new scrumChores.models.story(item.StoryID, item.Title, item.Description, item.Effort)) });
+        });
+    },
+
+    showNewStoryDialog: function () {
+        scrumChores.choreListVM.currentStory(new scrumChores.models.story("", "", "", ""));
+        scrumChores.choreListVM.dialogNewStory.dialog("open");
+    },
+
+    createStory: function () {  
+        $.ajax("/API/Story", {
+            data: ko.toJSON(scrumChores.choreListVM.currentStory),
+            type: "post", contentType: "application/json",
+            success: function (result) {
+                scrumChores.choreListVM.getStoryData();
+                scrumChores.choreListVM.dialogNewStory.dialog("close");
             }
         });
     }
 }
 
-scrumChores.choreListVM.getData();
+scrumChores.choreListVM.getSprintData();
 ko.applyBindings(scrumChores.choreListVM);
     
-scrumChores.choreListVM.dialogNewSprint = $("#dialog-form").dialog({
+scrumChores.choreListVM.dialogNewSprint = $("#dialog-sprintForm").dialog({
     autoOpen: false,
     height: 310,    
     width: 500,     
     modal: true,    
     buttons: {
-        "Create Sprint": scrumChores.choreListVM.createSprint,
+        "Save": scrumChores.choreListVM.createSprint,
         Cancel: function () {
             scrumChores.choreListVM.dialogNewSprint.dialog("close");
         }
     },
     close: function () {    
+    }
+});
+
+scrumChores.choreListVM.dialogNewStory = $("#dialog-storyForm").dialog({
+    autoOpen: false,
+    height: 310,
+    width: 500,
+    modal: true,
+    buttons: {
+        "Save": scrumChores.choreListVM.createStory,
+        Cancel: function () {
+            scrumChores.choreListVM.dialogNewStory.dialog("close");
+        }
+    },
+    close: function () {
     }
 });

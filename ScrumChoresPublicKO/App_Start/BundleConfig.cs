@@ -23,7 +23,8 @@ namespace ScrumChoresPublicKO
             bundles.Add(new ScriptBundle("~/bundles/scrumchorescommon").Include(
                         "~/Scripts/ScrumChores/Common/NameSpace.js",
                         "~/Scripts/ScrumChores/Common/DateHelper.js",
-                        "~/Scripts/ScrumChores/Common/Models/Sprint.js"));
+                        "~/Scripts/ScrumChores/Common/Models/Sprint.js",
+                        "~/Scripts/ScrumChores/Common/Models/Story.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/chorelist").Include(
                         "~/Scripts/ScrumChores/ViewModels/ChoreListVM.js"));

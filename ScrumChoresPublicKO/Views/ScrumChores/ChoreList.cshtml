@@ -8,14 +8,14 @@
     <h1>Sprints</h1>
 
     <a href="#/chorelist" data-bind="click: showNewSprintDialog">New</a>
-    @*<a href="#/chorelist" data-bind="click: editSprint">Change</a>
-        <a href="#/chorelist" data-bind="click: deleteSprint">Remove</a>*@
+    <a href="#/chorelist" data-bind="click: showEditSprintDialog">Change</a>
+    <a href="#/chorelist" data-bind="click: deleteSprint">Remove</a>
 
-    <table>
+    <table class="table table-bordered">
         <!-- Todo: Generate table body -->
         <tbody data-bind="foreach: sprints">
             <tr>
-                <td>
+                <td data-bind="click: $parent.sprintSelected.bind($data)">
                     <div class="sprintView k-widget">
                         <h4 data-bind="text: SprintName"></h4>
                         <h6 data-bind="text: SprintDateRange"></h6>
@@ -27,31 +27,86 @@
 
 </div>
 
-<div id="dialog-form" title="Create New Sprint">
-    <!-- Contact form (not working)-->
+<div id="chorePanel" class="col-md-9">
+
+    <h1>Chores</h1>
+
+    <a href="#/chorelist" data-bind="click: showNewStoryDialog">New</a>
+    @*<a href="#/chorelist" data-bind="click: editStory">Change</a>
+    <a href="#/chorelist" data-bind="click: deleteStory">Remove</a>*@
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>    
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Effort</th>
+                </tr>
+            </thead>
+            <!-- Todo: Generate table body -->
+            <tbody data-bind="foreach: stories">
+                <tr>
+                    <td data-bind="text: Title"></td>
+                    <td data-bind="text: Description"></td>
+                    <td data-bind="text: Effort"></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
+
+<div id="dialog-storyForm" title="Chore Form">
+    <form class="form-horizontal">
+        <!-- Title -->
+        <div class="form-group">
+            <label class="control-label col-md-3" for="Title">Title</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Title" data-bind="value: currentStory.Title">
+            </div>
+        </div>
+        <!-- Description -->
+        <div class="form-group">    
+            <label class="control-label col-md-3" for="Description">Description</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Description" data-bind="value: currentStory.Description">
+            </div>
+        </div>
+        <!-- Effort -->
+        <div class="form-group">
+            <label class="control-label col-md-3" for="Effort">Effort</label>
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="Effort" data-bind="value: currentStory.Effort">
+            </div>
+        </div>
+    </form>
+</div>
+
+<div id="dialog-sprintForm" title="Sprint Form">
     <form class="form-horizontal">
         <!-- Name -->
         <div class="form-group">
-            <label class="control-label col-md-3" for="name">Name</label>
+            <label class="control-label col-md-3" for="Name">Name</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="name" data-bind="value: currentSprint.SprintName">
+                <input type="text" class="form-control" id="Name" data-bind="value: currentSprint.SprintName">
             </div>
         </div>
-        <!-- Email -->
+        <!-- StartDate -->
         <div class="form-group">
-            <label class="control-label col-md-3" for="email">Start Date</label>
+            <label class="control-label col-md-3" for="StartDate">Start Date</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="email" data-bind="value: currentSprint.SprintStartDate">
+                <input type="text" class="form-control" id="StartDate" data-bind="value: currentSprint.SprintStartDate">
             </div>
         </div>
-        <!-- Website -->
+        <!-- EndDate -->
         <div class="form-group">
-            <label class="control-label col-md-3" for="website">End Date</label>
+            <label class="control-label col-md-3" for="EndDate">End Date</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="website" data-bind="value: currentSprint.SprintEndDate">
-            </div>
+                <input type="text" class="form-control" id="EndDate" data-bind="value: currentSprint.SprintEndDate">
+            </div>  
         </div>
-      </form>
+    </form>
 </div>
 
 @section Scripts {
