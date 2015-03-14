@@ -1,8 +1,9 @@
 ﻿scrumChores.choreListVM = {
-    // Sprint data    
+    // Sprint data    this.baseURL + this.baseURL + "/API
     sprints: ko.observableArray([]),
     currentSprint: ko.observable(new scrumChores.models.sprint("", "", "", "")),
     dialogNewSprint: {},
+    baseURL: "http://localhost/ScrumChoresPublicKO",
 
     // Get sprint data
     getSprintData: function () {  
@@ -10,7 +11,7 @@
             scrumChores.choreListVM.sprints.pop();
         }
 
-        $.getJSON("/API/Sprint", function (allData) {
+        $.getJSON(this.baseURL + "/API/Sprint", function (allData) {
             $.map(allData, function (item) { scrumChores.choreListVM.sprints.push(new scrumChores.models.sprint(item.SprintID, item.SprintName, item.SprintStartDate, item.SprintEndDate)) });
 
             if (scrumChores.choreListVM.sprints().length > 0 && scrumChores.choreListVM.currentSprint().SprintName() == "") {
@@ -44,7 +45,7 @@
     },
 
     deleteSprint: function () {
-        $.ajax("/API/Sprint", {
+        $.ajax(this.baseURL + "/API/Sprint", {
             data: ko.toJSON(scrumChores.choreListVM.currentSprint.SprintID),
             type: "delete", contentType: "application/json",
             success: function (result) {
@@ -54,7 +55,7 @@
     },
 
     createSprint: function() {
-        $.ajax("/API/Sprint", {
+        $.ajax(this.baseURL + "/API/Sprint", {
             data: ko.toJSON(scrumChores.choreListVM.currentSprint),
             type: "post", contentType: "application/json",
             success: function (result) {
@@ -75,7 +76,7 @@
             scrumChores.choreListVM.stories.pop();
         }
 
-        $.getJSON("/API/Story", function (allData) {
+        $.getJSON(this.baseURL + "/API/Story", function (allData) {
             $.map(allData, function (item) { scrumChores.choreListVM.stories.push(new scrumChores.models.story(item.StoryID, item.Title, item.Description, item.Effort)) });
         });
     },
@@ -86,7 +87,7 @@
     },
 
     createStory: function () {  
-        $.ajax("/API/Story", {
+        $.ajax(this.baseURL + "/API/Story", {
             data: ko.toJSON(scrumChores.choreListVM.currentStory),
             type: "post", contentType: "application/json",
             success: function (result) {
