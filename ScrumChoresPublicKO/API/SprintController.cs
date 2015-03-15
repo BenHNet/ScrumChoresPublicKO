@@ -38,6 +38,8 @@ namespace ScrumChoresPublicKO.API
         // GET api/<controller>
         public IEnumerable<Sprint> Get()
         {
+            System.Threading.Thread.Sleep(2000);
+
             var user = _userRepo.GetUser(_userManager.FindById(this.User.Identity.GetUserId()).UserID);
 
             var result = _sprintRepo.GetSprintsForUser(user.Result).ToList();
