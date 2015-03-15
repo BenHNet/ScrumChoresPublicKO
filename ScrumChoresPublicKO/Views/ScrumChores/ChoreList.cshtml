@@ -63,21 +63,21 @@
         <div class="form-group">
             <label class="control-label col-md-3" for="Title">Title</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="Title" data-bind="value: currentStory.Title">
+                <input type="text" class="form-control" id="Title" data-bind="value: currentStory().Title">
             </div>
         </div>
         <!-- Description -->
         <div class="form-group">    
             <label class="control-label col-md-3" for="Description">Description</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="Description" data-bind="value: currentStory.Description">
+                <input type="text" class="form-control" id="Description" data-bind="value: currentStory().Description">
             </div>
         </div>
         <!-- Effort -->
         <div class="form-group">
             <label class="control-label col-md-3" for="Effort">Effort</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="Effort" data-bind="value: currentStory.Effort">
+                <input type="text" class="form-control" id="Effort" data-bind="value: currentStory().Effort">
             </div>
         </div>
     </form>
@@ -89,21 +89,21 @@
         <div class="form-group">
             <label class="control-label col-md-3" for="Name">Name</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="Name" data-bind="value: currentSprint.SprintName">
+                <input type="text" class="form-control" id="Name" data-bind="value: currentSprint().SprintName">
             </div>
         </div>
         <!-- StartDate -->
         <div class="form-group">
             <label class="control-label col-md-3" for="StartDate">Start Date</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="StartDate" data-bind="value: currentSprint.SprintStartDate">
+                <input type="text" class="form-control" id="StartDate" data-bind="value: currentSprint().SprintStartDate">
             </div>
         </div>
         <!-- EndDate -->
         <div class="form-group">
             <label class="control-label col-md-3" for="EndDate">End Date</label>
             <div class="col-md-6">
-                <input type="text" class="form-control" id="EndDate" data-bind="value: currentSprint.SprintEndDate">
+                <input type="text" class="form-control" id="EndDate" data-bind="value: currentSprint().SprintEndDate">
             </div>  
         </div>
     </form>

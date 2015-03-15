@@ -1,17 +1,16 @@
 ﻿scrumChores.choreListVM = {
-    // Sprint data    this.baseURL + this.baseURL + "/API
     sprints: ko.observableArray([]),
     currentSprint: ko.observable(new scrumChores.models.sprint("", "", "", "")),
     dialogNewSprint: {},
     baseURL: "http://localhost/ScrumChoresPublicKO",
 
     // Get sprint data
-    getSprintData: function () {  
+    getSprintData: function () {
         while (scrumChores.choreListVM.sprints().length > 0) {
             scrumChores.choreListVM.sprints.pop();
         }
 
-        $.getJSON(this.baseURL + "/API/Sprint", function (allData) {
+        $.getJSON(scrumChores.choreListVM.baseURL + "/API/Sprint", function (allData) {
             $.map(allData, function (item) { scrumChores.choreListVM.sprints.push(new scrumChores.models.sprint(item.SprintID, item.SprintName, item.SprintStartDate, item.SprintEndDate)) });
 
             if (scrumChores.choreListVM.sprints().length > 0 && scrumChores.choreListVM.currentSprint().SprintName() == "") {
@@ -27,7 +26,7 @@
                 }
             }
         });
-        
+
     },
 
     sprintSelected: function (data) {
@@ -45,8 +44,8 @@
     },
 
     deleteSprint: function () {
-        $.ajax(this.baseURL + "/API/Sprint", {
-            data: ko.toJSON(scrumChores.choreListVM.currentSprint.SprintID),
+        $.ajax(scrumChores.choreListVM.baseURL + "/API/Sprint", {
+            data: ko.toJSON(scrumChores.choreListVM.currentSprint().SprintID()),
             type: "delete", contentType: "application/json",
             success: function (result) {
                 scrumChores.choreListVM.getSprintData();
@@ -54,9 +53,9 @@
         });
     },
 
-    createSprint: function() {
-        $.ajax(this.baseURL + "/API/Sprint", {
-            data: ko.toJSON(scrumChores.choreListVM.currentSprint),
+    createSprint: function () {
+        $.ajax(scrumChores.choreListVM.baseURL + "/API/Sprint", {
+            data: ko.toJSON(scrumChores.choreListVM.currentSprint()),
             type: "post", contentType: "application/json",
             success: function (result) {
                 scrumChores.choreListVM.getSprintData();
@@ -64,10 +63,10 @@
             }
         });
     },
-    
+
     // Story data    
     stories: ko.observableArray([]),
-    currentStory: ko.observable(new scrumChores.models.story("", "", "", "")),
+    currentStory: ko.observable(new scrumChores.models.story(new scrumChores.models.sprint("", "", "", ""), "", "", "", "")),
     dialogNewStory: {},
 
     // Get story data
@@ -76,19 +75,23 @@
             scrumChores.choreListVM.stories.pop();
         }
 
-        $.getJSON(this.baseURL + "/API/Story", function (allData) {
-            $.map(allData, function (item) { scrumChores.choreListVM.stories.push(new scrumChores.models.story(item.StoryID, item.Title, item.Description, item.Effort)) });
+        $.getJSON(scrumChores.choreListVM.baseURL + "/API/Story", function (allData) {
+            $.map(allData, function (item) {
+                if (item.Sprint.SprintID == scrumChores.choreListVM.currentSprint().SprintID()) {
+                    scrumChores.choreListVM.stories.push(new scrumChores.models.story(new scrumChores.models.sprint(item.Sprint.SprintID, item.Sprint.SprintName, item.Sprint.SprintStartDate, item.Sprint.SprintEndDate), item.StoryID, item.Title, item.Description, item.Effort))
+                }
+            });
         });
     },
 
     showNewStoryDialog: function () {
-        scrumChores.choreListVM.currentStory(new scrumChores.models.story("", "", "", ""));
+        scrumChores.choreListVM.currentStory(new scrumChores.models.story(scrumChores.choreListVM.currentSprint, "", "", "", ""));
         scrumChores.choreListVM.dialogNewStory.dialog("open");
     },
 
-    createStory: function () {  
-        $.ajax(this.baseURL + "/API/Story", {
-            data: ko.toJSON(scrumChores.choreListVM.currentStory),
+    createStory: function () {
+        $.ajax(scrumChores.choreListVM.baseURL + "/API/Story", {
+            data: ko.toJSON(scrumChores.choreListVM.currentStory()),
             type: "post", contentType: "application/json",
             success: function (result) {
                 scrumChores.choreListVM.getStoryData();
@@ -100,19 +103,19 @@
 
 scrumChores.choreListVM.getSprintData();
 ko.applyBindings(scrumChores.choreListVM);
-    
+
 scrumChores.choreListVM.dialogNewSprint = $("#dialog-sprintForm").dialog({
     autoOpen: false,
-    height: 310,    
-    width: 500,     
-    modal: true,    
+    height: 310,
+    width: 500,
+    modal: true,
     buttons: {
         "Save": scrumChores.choreListVM.createSprint,
         Cancel: function () {
             scrumChores.choreListVM.dialogNewSprint.dialog("close");
         }
     },
-    close: function () {    
+    close: function () {
     }
 });
 

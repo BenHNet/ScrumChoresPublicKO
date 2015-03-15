@@ -16,6 +16,6 @@ namespace ScrumChores.Model.Entities
         public string SprintName { get; set; }
         public DateTime SprintStartDate { get; set; }
         public DateTime SprintEndDate { get; set; }
-        public virtual List<Story> Stories { get; set; } 
+        //public virtual List<Story> Stories { get; set; } 
     }
 }

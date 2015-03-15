@@ -53,6 +53,7 @@ namespace ScrumChoresPublicKO.API
         // POST api/<controller>
         public void Post([FromBody]Story value)
         {
+            _StoryRepo.CreateStory(value);
         }
 
         // PUT api/<controller>/5

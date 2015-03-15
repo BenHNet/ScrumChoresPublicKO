@@ -14,6 +14,7 @@ namespace ScrumChores.Business.Repositories
 
         public Model.Entities.Story CreateStory(Model.Entities.Story newStory)
         {
+            _context.Sprints.Attach(newStory.Sprint);
             var result = _context.Stories.Add(newStory);
 
             _context.SaveChangesAsync();
@@ -23,7 +24,7 @@ namespace ScrumChores.Business.Repositories
 
         public IQueryable<Model.Entities.Story> GetStoriesForUser(Model.Entities.User thisUser)
         {
-            var result = _context.Stories.AsQueryable();
+            var result = _context.Stories.Include("Sprint").AsQueryable();
 
             return result;
         }
