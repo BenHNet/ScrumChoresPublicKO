@@ -28,6 +28,13 @@ namespace ScrumChores.Business.Repositories
 
             return result;
         }
+        
+        public IQueryable<Sprint> GetSprints()
+        {
+            var result = _context.Sprints.AsQueryable();
+
+            return result;
+        }
 
         public Sprint GetSprint(Guid Id)
         {

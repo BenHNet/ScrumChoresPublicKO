@@ -37,11 +37,20 @@ namespace ScrumChoresPublicKO.API
         // GET api/<controller>
         public IEnumerable<Story> Get()
         {
-            var user = _userRepo.GetUser(_userManager.FindById(this.User.Identity.GetUserId()).UserID);
+            try
+            {
+                var user = _userRepo.GetUser(_userManager.FindById(this.User.Identity.GetUserId()).UserID);
 
-            var result = _StoryRepo.GetStoriesForUser(user.Result);
+                var result = _StoryRepo.GetStoriesForUser(user.Result);
 
-            return result;
+                return result;
+            }
+            catch
+            {
+                var result = _StoryRepo.GetStories();
+
+                return result;
+            }
         }
 
         // GET api/<controller>/5
