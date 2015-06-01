@@ -12,6 +12,8 @@ namespace ScrumChores.Model.Interfaces
 
         IQueryable<Sprint> GetSprintsForUser(User thisUser);
 
+        IQueryable<Sprint> GetSprints();
+
         Sprint GetSprint(Guid Id);
     }
 }

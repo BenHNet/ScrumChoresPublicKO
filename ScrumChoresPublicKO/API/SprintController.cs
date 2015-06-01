@@ -38,12 +38,22 @@ namespace ScrumChoresPublicKO.API
         // GET api/<controller>
         public IEnumerable<Sprint> Get()
         {
-            var user = _userRepo.GetUser(_userManager.FindById(this.User.Identity.GetUserId()).UserID);
+            try
+            {
+                var user = _userRepo.GetUser(_userManager.FindById(this.User.Identity.GetUserId()).UserID);
 
-            var result = _sprintRepo.GetSprintsForUser(user.Result).ToList();
-            result.Insert(0, new Sprint() { SprintName = "Backlog" });
+                var result = _sprintRepo.GetSprintsForUser(user.Result).ToList();
+                result.Insert(0, new Sprint() { SprintName = "Backlog" });
 
-            return result.AsQueryable();
+                return result.AsQueryable();
+            }
+            catch
+            {
+                var result = _sprintRepo.GetSprints().ToList();
+                result.Insert(0, new Sprint() { SprintName = "Backlog" });
+
+                return result.AsQueryable();
+            }
         }
 
         // GET api/<controller>/5

@@ -11,6 +11,8 @@ namespace ScrumChores.Model.Interfaces
         Story CreateStory(Story newStory);
 
         IQueryable<Story> GetStoriesForUser(User thisUser);
+        
+        IQueryable<Story> GetStories();
 
         Story GetStory(Guid Id);
     }
