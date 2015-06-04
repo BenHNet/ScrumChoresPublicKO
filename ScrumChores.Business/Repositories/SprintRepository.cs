@@ -24,7 +24,7 @@ namespace ScrumChores.Business.Repositories
 
         public IQueryable<Sprint> GetSprintsForUser(User thisUser)
         {
-            var result =  _context.Sprints.AsQueryable();
+            var result =  _context.Sprints.AsQueryable().OrderBy(x => x.SprintName);
 
             return result;
         }

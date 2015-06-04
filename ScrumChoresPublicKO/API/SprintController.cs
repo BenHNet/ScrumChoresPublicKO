@@ -41,7 +41,6 @@ namespace ScrumChoresPublicKO.API
             var user = _userRepo.GetUser(_userManager.FindById(this.User.Identity.GetUserId()).UserID);
 
             var result = _sprintRepo.GetSprintsForUser(user.Result).ToList();
-            result.Insert(0, new Sprint() { SprintName = "Backlog" });
 
             return result.AsQueryable();
         }
