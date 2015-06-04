@@ -21,13 +21,13 @@ namespace ScrumChoresPublicKO
                         "~/Scripts/knockout-3.3.0.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/scrumchorescommon").Include(
-                        "~/Scripts/ScrumChores/Common/NameSpace.js",
-                        "~/Scripts/ScrumChores/Common/DateHelper.js",
-                        "~/Scripts/ScrumChores/Common/Models/Sprint.js",
-                        "~/Scripts/ScrumChores/Common/Models/Story.js"));
+                        "~/Scripts/ScrumChoresTS/Common/NameSpace.js",
+                        "~/Scripts/ScrumChoresTS/Common/DateHelper.js",
+                        "~/Scripts/ScrumChoresTS/Common/Models/Sprint.js",
+                        "~/Scripts/ScrumChoresTS/Common/Models/Story.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/chorelist").Include(
-                        "~/Scripts/ScrumChores/ViewModels/ChoreListVM.js"));
+                        "~/Scripts/ScrumChoresTS/ViewModels/ChoreListVM.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
